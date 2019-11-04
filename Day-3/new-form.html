@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="newform.css" rel="stylesheet">
+</head>
+<body>
+    <div class="orangecontainer">
+        <nav>
+            <ul>
+                <li><a href"#">Home</a></li>
+                <li><a href"#">About</a></li>
+                <li><a href"#">School Info</a></li>
+                <li><a href"#">Learn More</a></li>
+                <li><a href"#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <section>
+                <form>
+                    <h1>My First Form</h1>
+                    <p>Fill out all your info below</p>
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Your Name">
+                        <label for="number" >Phone Number</label>
+                        <input type="tel" placeholder="10-Digit #" maxlength="10">
+                        <label>Email</label>
+                        <input for="email" type="text" placeholder="Your Email">
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>Are you in School?</p>
+                        <label>
+                        <input type="radio" name="school" value="yes">Yes</label>
+                        <label><input type="radio" name="school" value="no">No</label>
+                        <p>When did you start School?</p>
+                        <input type="date" id="date" name="date">
+                        <label for="schoolname">Choose Name of School</label>
+                        <select id="schoolname"    name="schoolname">
+                            <option selected>Select One..</option>
+                            <option value="Harvard">Harvard</option>
+                            <option value="Yale">Yale</option>
+                            <option value="None of the Above">None of the Above</option>
+                        </select>
+                        <label for="Comments">Comments on School:</label>
+                        <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="Enter comments here.." maxlength="200"></textarea>
+                        <label>
+                        <input type="checkbox" value="subscribe" name="subscribe" checked> Add Me to Email List</label>
+                    </fieldset>
+                    <button type="reset">Reset!</button>
+                    <button type="submit">Submit!</button>
+                </form>
+            </section>
+            <aside>
+                <h2>Office Loation</h2>
+                <address>
+                    Jay Milton Office &middot;
+                    40 Gerrard Street East &middot;
+                    Unit 3414 &middot;
+                    Toronto, M5M1B2
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.6104464574283!2d-79.38093617073187!3d43.659780998695055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35f07da88121%3A0xeaac015a6d5131b9!2sEmpatech.io!5e0!3m2!1sen!2sca!4v1572549418507!5m2!1sen!2sca" width="250" height="250" frameborder="0" style="border:1px solid black;" allowfullscreen=""></iframe>
+            </aside>
+
+        </div>
+        <footer>
+            <nav class="footernav">
+                <ul>
+                    <li><a href"#">Home</a></li>
+                    <li><a href"#">About</a></li>
+                    <li><a href"#">School Info</a></li>
+                    <li><a href"#">Learn More</a></li>
+                    <li><a href"#">Contact</a></li>
+                </ul>
+            </nav>
+            <h6>copyright. JM.2019</h6>
+        </footer>
+    </div>
+</body>
+</html>
